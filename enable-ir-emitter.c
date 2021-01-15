@@ -25,7 +25,7 @@ int main() {
     //Don't forget to change the buffer size with the value of wLength
 
     struct uvc_xu_control_query query = {
-        .unit = 0x0e, //2 first symbols of wIndex
+        .unit = 0x04, //2 first symbols of wIndex
         .selector = 0x06, //2 first symbols of wValue
         .query = UVC_SET_CUR,
         .size = 9, //wLength
